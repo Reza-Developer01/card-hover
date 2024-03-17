@@ -139,25 +139,74 @@ table {
 /* ==== Font Family ==== */
 @font-face {
     font-family: "IranYekanX-Regular";
-    src: url("../fonts/IRANYekanX-Regular.ttf") format("truetype");
+    src: url("../fonts/IRANYekanXFaNum-Regular.woff");
 }
 
 @font-face {
     font-family: "IranYekanX-Medium";
-    src: url("../fonts/IRANYekanX-Medium.ttf") format("truetype");
+    src: url("../fonts/IRANYekanXFaNum-Medium.woff");
 }
 
 @font-face {
     font-family: "IranYekanX-Bold";
-    src: url("../fonts/IRANYekanX-Bold.ttf") format("truetype");
+    src: url("../fonts/IRANYekanXFaNum-Bold.woff");
 }
 
 @font-face {
     font-family: "IranYekanX-Heavy";
-    src: url("../fonts/IRANYekanX-Heavy.ttf") format("truetype");
+    src: url("../fonts/IRANYekanXFaNum-Heavy.woff");
 }
 
 /* ==== App Css ==== */
 body {
     font-family: "IranYekanX-Regular";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card {
+    width: 592px;
+    height: 424px;
+    background-image: url("../images/card.png");
+    border-radius: 12px;
+    position: relative;
+}
+
+.card__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.card__messages {
+    width: 80px;
+    height: 48px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-family: "IranYekanX-Bold";
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #1D2939;
+}
+
+.card__icon {
+    color: #ffffff;
+}
+
+.card__heart {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C9184A;
+    border-radius: 100%;
 }
