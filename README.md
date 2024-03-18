@@ -2,7 +2,7 @@
 
 **😃Beautiful Card With Beautiful Hover.**
 
-- ✨ [Demo Project](https://reza-developer01.github.io/modal/)
+- ✨ [Demo Project](https://reza-developer01.github.io/card-hover/)
 
 - 👨‍💻 Developed by Reza Rashvand
 
