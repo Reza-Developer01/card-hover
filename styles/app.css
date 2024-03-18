@@ -160,6 +160,7 @@ table {
 /* ==== App Css ==== */
 body {
     font-family: "IranYekanX-Regular";
+    line-height: 1.5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,6 +173,11 @@ body {
     background-image: url("../images/card.png");
     border-radius: 12px;
     position: relative;
+    overflow: hidden;
+}
+
+.card:hover .card__content {
+    bottom: 0;
 }
 
 .card__wrapper {
@@ -209,4 +215,26 @@ body {
     justify-content: center;
     background-color: #C9184A;
     border-radius: 100%;
+}
+
+.card__content {
+    padding: 36px 24px 24px;
+    position: absolute;
+    bottom: -142px;
+    right: 0;
+    left: 0;
+    color: #ffffff;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    transition: all 250ms ease-in-out;
+}
+
+.card__title {
+    font-family: "IranYekanX-Bold";
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 16px;
+}
+
+.card__text {
+    line-height: 30px;
 }
